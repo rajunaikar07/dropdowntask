@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/outrline"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_1"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/tImage"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Tourist Place "
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/tname"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_drop_down_circle_24"
+            android:id="@+id/downArrow"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/expandablelayout"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_call_24"
+            android:id="@+id/call1"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img"
+            android:id="@+id/map1"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_open_in_browser_24"
+            android:id="@+id/brose1"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            />
+    </LinearLayout>
+</LinearLayout>
